@@ -1,0 +1,43 @@
+/* Global */
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Sections of the website */
+section {
+	height: 500px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+/* Menu */
+.hero {
+	background-color: #1c1d25;
+	height: 100vh;
+	color: white;
+	font-size: 40px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+ul {
+	display: flex;
+	list-style-type: none;
+	width: 600px;
+	justify-content: space-around;
+	font-size: 30px;
+}
+
+li {
+	text-decoration: none;
+}
+
+/* Rodape */
+footer {
+	height: 500px;
+	background-color: black;
+}
