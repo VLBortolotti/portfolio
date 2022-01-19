@@ -10,15 +10,20 @@ body {
 
 /* Sections of the website */
 section {
-	height: 500px;
+	height: 90vh;
 	background-color: white;
 	border: 1px solid black;
 }
 
 /* Menu */
+.hamburger {
+	display: none;
+}
+
+
 .hero {
 	background-color: #1c1d25;
-	height: 100vh;
+	height: 95vh;
 	color: white;
 	font-size: 40px;
 }
@@ -28,7 +33,7 @@ nav {
 	justify-content: space-between;
 }
 
-ul {
+#menu-ul {
 	display: flex;
 	list-style-type: none;
 	width: 600px;
@@ -36,11 +41,16 @@ ul {
 	font-size: 30px;
 }
 
+#menu-ul.show {
+	display: block;
+}
+
 li {
 	text-decoration: none;
 }
 
 .menu-item:hover {
+	transition: all .6s ease;
 	border-bottom: 1px solid white;
 	color: coral;
 	cursor: pointer;
@@ -90,6 +100,7 @@ p {
 	background-color: #ef744b;
 	box-shadow: 10px 4px 7px black;
 	cursor: pointer !important;
+	transition: all .3s ease-in-out;
 }
 
 .button:active {
@@ -100,11 +111,13 @@ p {
 /* Logo */
 .logo {
 	height: 8vh;
+	margin: 1vh 0 0 0.5vh;
 }
 
 .logo:hover {
 	background-color: coral;
-	border-radius: 20px;
+	border-radius: 30px;
+	transition: .5s ease-in-out;
 }
 
 /* Social */
@@ -125,14 +138,61 @@ p {
 .rede:hover {
 	background-color: coral;
 	cursor: pointer;
+	transition: all .4s ease;
 }
 
 .socials {
 	margin-top: 12vh;
 }
 
+/* Information Section */
+.information {
+
+}
+
+.information ul {
+	margin-left: -15px;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.information ul li {
+	margin-bottom: 7px;
+}
+
+/* Sub-sections */
+
+.sub-section {
+	display: flex;
+	padding: 40px 70px 70px 20px;
+	height: 50%;
+}
+
+h2 {
+	font-size: 50px;
+}
+
 /* Rodape */
 footer {
 	height: 500px;
 	background-color: black;
+}
+
+/* Responsivo */
+
+@media only screen and (max-width: 620px) {
+	
+	.hamburger {
+		margin-right: 20px;
+		border: 0;
+		background-color: transparent;
+		color: white;
+		font-size: 30px;
+		display: block;
+	}
+
+	#menu-ul {
+		display: none;
+	}
+
 }
