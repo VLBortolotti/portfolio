@@ -57,6 +57,10 @@ h1 {
 	margin-bottom: 200px;
 }
 
+.hero-text:hover {
+	cursor: default;
+}
+
 .hero-area {
 	display: flex;
 	height: 100%;
@@ -85,7 +89,7 @@ p {
 .button:hover {
 	background-color: #ef744b;
 	box-shadow: 10px 4px 7px black;
-	cursor: default;
+	cursor: pointer !important;
 }
 
 .button:active {
