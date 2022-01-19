@@ -12,7 +12,7 @@ body {
 section {
 	height: 90vh;
 	background-color: white;
-	border: 1px solid black;
+	border: 2px solid black;
 }
 
 /* Menu */
@@ -23,7 +23,7 @@ section {
 
 .hero {
 	background-color: #1c1d25;
-	height: 95vh;
+	height: 120vh;
 	color: white;
 	font-size: 40px;
 }
@@ -146,10 +146,6 @@ p {
 }
 
 /* Information Section */
-.information {
-
-}
-
 .information ul {
 	margin-left: -15px;
 	font-weight: 400;
@@ -193,6 +189,10 @@ footer {
 
 	#menu-ul {
 		display: none;
+	}
+
+	nav {
+		align-items: flex-start;
 	}
 
 }
