@@ -1,4 +1,4 @@
-// Menu hamburgr responsivo
+// Menu hamburger responsivo
 const hamburgerButton = document.getElementById("hamburger");
 const navList = document.getElementById("menu-ul");
 
