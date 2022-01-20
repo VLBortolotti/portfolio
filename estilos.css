@@ -108,6 +108,26 @@ p {
 	color: #808080;
 }
 
+/* Arrow up scroll */ 
+#btnScrollToTop {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: blue;
+	color: white;
+	outline: none;
+	cursor: pointer; 
+}
+
+#btnScrollToTop:hover {
+	background-color: darkblue;
+	transition: all .3s ease;
+	box-shadow: 0 0 5px ;
+}
+
 /* Logo */
 .logo {
 	height: 8vh;
