@@ -8,11 +8,10 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
-/* Sections of the website */
+/* Secoes do website */
 section {
 	height: 90vh;
 	background-color: white;
-	border: 2px solid black;
 }
 
 /* Menu */
@@ -49,7 +48,7 @@ li {
 	text-decoration: none;
 }
 
-.menu-item:hover {
+.menu-item a:hover {
 	transition: all .6s ease;
 	border-bottom: 1px solid white;
 	color: coral;
@@ -177,7 +176,6 @@ p {
 }
 
 /* Sub-sections */
-
 .sub-section {
 	display: flex;
 	padding: 40px 70px 70px 20px;
@@ -186,16 +184,97 @@ p {
 
 h2 {
 	font-size: 50px;
+	cursor: default;
 }
 
-/* Rodape */
+h2:hover {
+	-webkit-text-stroke: 2.5px coral;
+}
+
+/* Projetos */
+.project-card {
+	width: 310px;
+	height: 410px;
+	box-shadow: 5px 5px 20px grey;
+	margin-bottom: 40px;
+}
+
+.project-section {
+	padding: 40px 70px 70px 20px;
+	height: 50%;
+}
+
+.project-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+.subtext {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.project-image {
+	margin-top: 25px;
+	width: 300px;
+	border-radius: 125px;
+}
+
+hr {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#sobre-mim-btn a {
+	color: white;
+}
+
+.ver a:hover {
+	color: coral;
+}
+
+.ver {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.ver:hover {
+	cursor: pointer;
+	color: coral;
+}
+
+/* Links */
+.menu-item a {
+	color: white;
+}
+
+/* Rodape - contato */
 footer {
-	height: 500px;
+	height: 35vh;
 	background-color: black;
 }
 
-/* Responsivo */
+#contato {
+	color: white;
+	font-size: 40px;
+}
 
+#contato:hover{
+	color: white;
+}
+
+#email {
+	font-size: 25px;
+}
+
+/* Responsivo */
 @media only screen and (max-width: 620px) {
 	
 	.hamburger {
@@ -214,5 +293,4 @@ footer {
 	nav {
 		align-items: flex-start;
 	}
-
 }

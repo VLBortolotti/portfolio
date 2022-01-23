@@ -32,9 +32,21 @@
 			<nav>
 				<img class="logo" src="logo.png" alt="Logo do website" />
 				<ul id="menu-ul">
-					<li class="menu-item">Sobre</li>
-					<li class="menu-item">Projetos</li>
-					<li class="menu-item">Contato</li>
+					<li class="menu-item">
+						<a href="#sobre-mim">
+							Sobre
+						</a>
+					</li>
+					<li class="menu-item">
+						<a href="#projetos">
+							Projetos
+						</a>
+					</li>
+					<li class="menu-item">
+						<a href="#contato">	
+							Contato
+						</a>
+					</li>
 				</ul>
 
 				<button class="hamburger" id="hamburger">
@@ -49,7 +61,11 @@
 				<div class="hero-text">
 					<h1 class="name">Vitor Laco</h1>
 					<p class="desenvolvedor">Desenvolvedor</p>
-					<div class="button">Sobre</div>
+					<div class="button" id="sobre-mim-btn">
+						<a href="#sobre-mim">
+							Sobre
+						</a>
+					</div>
 				</div>
 
 				<!-- Redes sociais -->
@@ -70,7 +86,7 @@
 		</section>
 
 		<!-- Segunda Secao -->
-		<section class="sub-section">
+		<section class="sub-section" id="sobre-mim">
 			<div class="information">
 				<h2>Sobre mim</h2>
 				<p>
@@ -101,12 +117,58 @@
 		</section>
 
 		<!-- Secao de projetos -->
-		<section class="sub-section">
+		<section class="project-section" id="projetos">
 			<h2>Projetos</h2>
+			<div class="project-container">
+				<div class="project-card">
+					<img class="project-image" src="clock.png" alt="Relógio">
+					<h3>Relógio</h3>
+					<p class="subtext">
+						Projeto simulando um relógio analógico.
+					</p>
+					<hr/>
+					<p class="ver">
+						<a href="https://vlbortolotti.github.io/Clock/" target="_blank">
+							Ver
+						</a>
+					</p>
+				</div>
+
+				<div class="project-card">
+					<img class="project-image" src="AnoNovo.png" alt="Relógio regressivo para o ano novo">
+					<h3>Contagem Regressiva</h3>
+					<p class="subtext">
+						Projeto fazendo a contagem regressiva para o próximo ano novo.
+					</p>
+					<hr/>
+					<p class="ver">
+						<a href="https://vlbortolotti.github.io/countdown-timer/" target="_blank">
+							Ver
+						</a>
+					</p>
+				</div>
+
+				<div class="project-card">
+					<img class="project-image" src="calculadora.png" alt="Calculadora">
+					<h3>Calculadora</h3>
+					<p class="subtext">
+						Projeto de uma calculadora.
+					</p>
+					<hr/>
+					<p class="ver">
+						<a href="https://vlbortolotti.github.io/calculadora/" target="_blank">
+							Ver
+						</a>
+					</p>
+				</div>
+			</div>
 		</section>
 		
 		<!-- Rodape -->
-		<footer></footer>
+		<footer id="contato">
+			<h3>Contate-me</h3>
+			<p id="email">vitorlacobortolotti@gmail.com</p>
+		</footer>
 
 		<script src="main.js"></script>
 	</body>
